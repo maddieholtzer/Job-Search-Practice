@@ -22,7 +22,7 @@ end
 def num_vowels(str)
   # your code goes here
   ret = 0
-  str.downcase.split.each do |letter|
+  str.downcase.chars.each do |letter|
     ret+=1 if ['a', 'e', 'i', 'o', 'u'].include?(letter)
   end
   ret
@@ -72,5 +72,5 @@ end
 # code, but the solution is tricky!
 def my_rotate(arr, offset=1)
   # your code goes here
-  
+
 end
