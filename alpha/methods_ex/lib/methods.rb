@@ -2,15 +2,18 @@
 
 # Write a method that returns its argument converted to a string.
 def my_to_s(arg)
+  arg.to_s
 end
 
 # Write a method that returns its argument rounded to the nearest integer.
 def my_round(num)
+  num/1
 end
 
 # Write a method that returns the remainder of its two arguments.
 # You may use the modulo operator.
 def my_modulo(dividend, divisor)
+  dividend%divisor
 end
 
 # Write a method that returns the least common multiple of its two arguments.
