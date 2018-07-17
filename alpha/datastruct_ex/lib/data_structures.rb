@@ -21,11 +21,17 @@ end
 # Write a method that returns the number of vowels in its argument
 def num_vowels(str)
   # your code goes here
+  ret = 0
+  str.downcase.split.each do |letter|
+    ret+=1 if ['a', 'e', 'i', 'o', 'u'].include?(letter)
+  end
+  ret
 end
 
 # Write a method that returns its argument with all its vowels removed.
 def devowel(str)
   # your code goes here
+
 end
 
 
@@ -66,4 +72,5 @@ end
 # code, but the solution is tricky!
 def my_rotate(arr, offset=1)
   # your code goes here
+  
 end
