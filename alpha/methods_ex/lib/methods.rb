@@ -52,6 +52,10 @@ end
 # Assume the argument is an integer.
 # HINT: What is the return value of 142 % 10? How about 2 % 10?
 def last_digit(int)
+  until int<10
+    int = int/10
+  end
+  int
 end
 
 # Write a method that returns a boolean indicating whether
@@ -59,6 +63,7 @@ end
 # Assume the argument is an integer.
 # Bonus points if you use last_digit as a helper method.
 def last_digit_odd?(int)
+  last_digit(int) % 2 == 0
 end
 
 # Write a method that returns the greatest common divisor of the last
