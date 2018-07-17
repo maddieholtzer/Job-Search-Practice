@@ -7,7 +7,7 @@ end
 
 # Write a method that returns its argument rounded to the nearest integer.
 def my_round(num)
-  num/1
+  num.round
 end
 
 # Write a method that returns the remainder of its two arguments.
@@ -42,6 +42,7 @@ end
 # (negative(-1) => -1, negative(1) => -1, negative(0) => 0)
 # HINT: use the abs method
 def negative(num)
+  return num if num<1
   num * -1
 end
 
