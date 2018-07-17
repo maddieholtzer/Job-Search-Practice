@@ -3,6 +3,7 @@
 # Write a method that returns the range of its argument (an array of integers).
 def range(arr)
   # your code goes here
+  arr.max - arr.min
 end
 
 # Write a method that returns a boolean indicating whether an array is in sorted
@@ -11,6 +12,7 @@ end
 # ["dog", "cat"] => false
 def in_order?(arr)
   # your code goes here
+  arr == arr.sort
 end
 
 
