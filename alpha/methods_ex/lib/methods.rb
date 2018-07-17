@@ -19,6 +19,7 @@ end
 # Write a method that returns the least common multiple of its two arguments.
 # You may use the lcm method.
 def my_lcm(int_one, int_two)
+  return 0 if int_one< 1 || int_two<1
   num = 1
   until num%int_one == 0 && num%int_two == 0
     num+=1
