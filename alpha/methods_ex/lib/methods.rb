@@ -19,11 +19,17 @@ end
 # Write a method that returns the least common multiple of its two arguments.
 # You may use the lcm method.
 def my_lcm(int_one, int_two)
+  num = 1
+  until num%int_one == 0 && num%int_two == 0
+    num+=1
+  end
+  num
 end
 
 # Write a method that returns its argument converted to a float then
 # converted to a string.
 def to_stringified_float(int)
+  int.to_f.to_s
 end
 
 # Write a method that returns the sum of the absolute values of its arguments.
