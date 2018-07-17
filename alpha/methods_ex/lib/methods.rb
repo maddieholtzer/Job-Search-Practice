@@ -34,6 +34,7 @@ end
 
 # Write a method that returns the sum of the absolute values of its arguments.
 def absolute_sum(num_one, num_two)
+  num_one.abs + num_two.abs
 end
 
 # Write a method that returns the negative value of its argument.
@@ -41,6 +42,7 @@ end
 # (negative(-1) => -1, negative(1) => -1, negative(0) => 0)
 # HINT: use the abs method
 def negative(num)
+  num * -1
 end
 
 
