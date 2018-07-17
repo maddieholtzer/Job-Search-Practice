@@ -54,10 +54,7 @@ end
 # Assume the argument is an integer.
 # HINT: What is the return value of 142 % 10? How about 2 % 10?
 def last_digit(int)
-  until int<10
-    int = int/10
-  end
-  int
+  int% (10* last_digit.to_s.length)
 end
 
 # Write a method that returns a boolean indicating whether
@@ -73,7 +70,14 @@ end
 # (gcd_of_last_digits(93, 9) = 3.gcd(9) => 3)
 # Bonus points if you use last_digit as a helper method.
 def gcd_of_last_digits(int_one, int_two)
-
+  first_last = last_digit(int_one)
+  last_last = last_digit(int_two)
+  ret_num = 1
+  counter = 1
+  while counter<first_last && counter<last_last
+    counter+=1
+    ret_num = counter if first_last%counter == 0 && last_last%counter == 0
+  end
 end
 
 # Write a method that returns the last n digits of its first argument,
